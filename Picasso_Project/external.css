@@ -1,0 +1,147 @@
+/* xs */
+@media (min-with: 475px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* sm */
+@media (min-with: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* md */
+@media (min-with: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* Lg */
+@media (min-with: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* xL */
+@media (min-with: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* 2xL */
+@media (min-with: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+.Html {
+  background-color: black;
+}
+.Art {
+  background-color: aliceblue;
+}
+
+html {
+  background-color: black;
+  margin: auto 0;
+}
+
+body {
+  font-size: 22px;
+  font-family: monospace;
+  line-height: 1.5;
+
+  color: black;
+  width: 600px;
+  margin: 0 auto;
+  background-color: rgb(244, 125, 39);
+}
+h1 {
+  background-color: rgb(244, 125, 39);
+  color: black;
+  font-family: monospace;
+  width: 80%;
+  text-align: center;
+}
+.Grid {
+  display: grid;
+  font-family: monospace;
+  gap: 5px;
+  background-color: blue;
+  padding: 2px;
+}
+.flex {
+  display: flex;
+  background-color: aliceblue;
+}
+.flex > div {
+  background-color: darkcyan;
+  margin: 10px;
+  padding: 5px;
+  font-size: 25px;
+}
+
+.circle {
+  width: 100px; /* Set width and height to desired size */
+  height: 100px;
+  background-color: red; /* Set background color */
+  border-radius: 50%;
+  float: right;
+}
+.triangle-up {
+  z-index: -1;
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 200px solid red; /* You can change the color */
+  float: right;
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid red; /* You can change the color */
+  float: right;
+}
+.col {
+  background-color: aqua;
+  border-style: solid 2px;
+}
+.wrapper {
+  position: relative;
+}
+
+.dashed-box {
+  position: relative;
+  z-index: 1;
+  border: dashed;
+  height: 8em;
+  margin-bottom: 1em;
+  margin-top: 2em;
+}
+
+.green-box {
+  position: absolute;
+  z-index: 2; /* put .green-box above .dashed-box */
+  background: lightgreen;
+  width: 20%;
+  left: 65%;
+  top: -25px;
+  height: 7em;
+  opacity: 0.9;
+}
+.btn {
+  border-style: solid;
+  border-color: black;
+  background-color: rgb(244, 125, 39);
+  font-family: monospace;
+  color: black;
+}
